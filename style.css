@@ -325,6 +325,73 @@ main a:hover {
   }
 }
 
+@media (max-width: 505px) {
+  html {
+    /* Scale the whole page down smoothly on narrow devices */
+    font-size: clamp(12px, 2.9vw, 15px);
+  }
+
+  main {
+    gap: 14px;
+    padding: 0 12px;
+  }
+
+  header,
+  footer {
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    margin-top: 12px;
+    gap: 8px;
+  }
+
+  nav a {
+    padding: 6px 10px;
+  }
+
+  section {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .name {
+    margin-bottom: 6px;
+  }
+
+  .about-content {
+    gap: 14px;
+  }
+
+  .profile-img {
+    width: min(210px, 70vw);
+    height: min(210px, 70vw);
+  }
+
+  .skills-content .skill {
+    gap: 8px;
+  }
+
+  .skills-content .skill p {
+    padding: 8px 12px;
+  }
+
+  .contact-content {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+  }
+
+  .contact-content a {
+    min-height: 44px;
+    padding: 8px 10px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .trail-dot {
     animation: none;
